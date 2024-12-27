@@ -1,0 +1,168 @@
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 7.0.0-b478feaa9aab4375eba71de77b4ca138ad2f62aa  -->
+<jasperReport name="PaymentReceipt" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="51e22bfe-189d-4d89-a000-d119012aea19">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DrivingSchoolPayment"/>
+	<parameter name="P_Pay_Id" class="java.lang.String"/>
+	<query language="SQL"><![CDATA[SELECT
+    student.student_id,
+    student.phone_number,
+    Student.email,
+    student.stu_name AS student_name,
+    payment.pay_date,
+    payment.pay_method,
+    payment_plan.payplan_id,
+    payment_plan.amount,
+    payment_plan.rate,
+    payment_plan.rate_price,
+    payment_plan.description
+FROM
+    student
+        JOIN
+    payment ON student.payment_id = payment.pay_id
+        JOIN
+    payment_plan ON student.paymentplan_id = payment_plan.payplan_id
+WHERE
+    payment.pay_id = $P{P_Pay_Id}]]></query>
+	<field name="student_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="student_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="student_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="phone_number" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="phone_number"/>
+		<property name="com.jaspersoft.studio.field.label" value="phone_number"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="email" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="email"/>
+		<property name="com.jaspersoft.studio.field.label" value="email"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="student_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="stu_name"/>
+		<property name="com.jaspersoft.studio.field.label" value="student_name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="pay_date" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="pay_date"/>
+		<property name="com.jaspersoft.studio.field.label" value="pay_date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+	</field>
+	<field name="pay_method" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="pay_method"/>
+		<property name="com.jaspersoft.studio.field.label" value="pay_method"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+	</field>
+	<field name="payplan_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="payplan_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="payplan_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment_plan"/>
+	</field>
+	<field name="amount" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="amount"/>
+		<property name="com.jaspersoft.studio.field.label" value="amount"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment_plan"/>
+	</field>
+	<field name="rate" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="rate"/>
+		<property name="com.jaspersoft.studio.field.label" value="rate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment_plan"/>
+	</field>
+	<field name="rate_price" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="rate_price"/>
+		<property name="com.jaspersoft.studio.field.label" value="rate_price"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment_plan"/>
+	</field>
+	<field name="description" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="description"/>
+		<property name="com.jaspersoft.studio.field.label" value="description"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment_plan"/>
+	</field>
+	<background splitType="Stretch"/>
+	<title height="79" splitType="Stretch">
+		<element kind="staticText" uuid="4664c818-73f3-468a-a2b2-4ac169de1928" x="-8" y="10" width="570" height="60" fontSize="28.0" italic="true" underline="false" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[LEARN DRIVE PAYMENT RECEIPT]]></text>
+		</element>
+	</title>
+	<pageHeader height="108" splitType="Stretch">
+		<element kind="staticText" uuid="1814e9a5-a7ca-46c5-bb35-6faf3ea1fde5" x="-10" y="0" width="110" height="30" fontSize="14.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Student Name :]]></text>
+		</element>
+		<element kind="staticText" uuid="b7cbb651-a8c2-47ab-a9c6-62d7f4e7206e" x="-10" y="33" width="110" height="30" fontSize="14.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Student ID       :]]></text>
+		</element>
+		<element kind="staticText" uuid="e48c8f2d-687d-49f4-8ea5-4aad61f2ca79" x="-10" y="66" width="110" height="30" fontSize="14.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Student Email :]]></text>
+		</element>
+		<element kind="staticText" uuid="ec9e4a77-4129-4c71-baeb-f4d3508ca910" x="270" y="66" width="126" height="30" fontSize="14.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Student Number  :]]></text>
+		</element>
+		<element kind="textField" uuid="3a7bd753-a8d7-4f71-a19d-06376bbc3281" x="100" y="33" width="141" height="30" fontSize="12.0" bold="true" vTextAlign="Middle">
+			<expression><![CDATA[$F{student_id}]]></expression>
+		</element>
+		<element kind="textField" uuid="f7d822d2-c8d2-4718-8dc9-23506fe86a52" x="397" y="66" width="138" height="30" fontSize="12.0" bold="true" vTextAlign="Middle">
+			<expression><![CDATA[$F{phone_number}]]></expression>
+		</element>
+		<element kind="textField" uuid="f74b54f7-b073-4d7c-8a34-0c0dfcd25ca6" x="101" y="66" width="169" height="30" fontSize="12.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<expression><![CDATA[$F{email}]]></expression>
+		</element>
+		<element kind="textField" uuid="115f3395-44d7-4834-94c9-334d7c445d8b" x="100" y="0" width="138" height="30" fontSize="12.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<expression><![CDATA[$F{student_name}]]></expression>
+		</element>
+		<element kind="textField" uuid="b0b3363a-6501-49f0-bd44-b22dcf67f02f" x="410" y="0" width="150" height="30" fontSize="11.0" bold="true" hTextAlign="Right" vTextAlign="Middle">
+			<expression><![CDATA[$F{pay_date}]]></expression>
+		</element>
+	</pageHeader>
+	<columnHeader height="47" splitType="Stretch">
+		<element kind="staticText" uuid="c616fb27-ea5f-4fdd-af14-e04eaad597ca" x="0" y="16" width="230" height="30" fontSize="12.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Payment Method]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7be841aa-dfff-4c5a-9dfc-22fa9ef11817"/>
+		</element>
+		<element kind="staticText" uuid="80fb2ab9-af0a-48bb-a618-ec2ce999103b" x="230" y="16" width="150" height="30" fontSize="12.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Paymentplan ID]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c916860c-37a1-472a-a90b-4acea96154b4"/>
+		</element>
+		<element kind="staticText" uuid="8e18af8a-cff9-4de7-8ce0-dac1c4f54a3b" x="380" y="16" width="174" height="30" fontSize="12.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Amount]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f759d05a-1332-4ea2-9584-311b4c1eb0e5"/>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<element kind="textField" uuid="50276145-a816-447d-998f-94ffd94ae6fb" x="0" y="0" width="230" height="30" fontSize="11.0" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{pay_method}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7be841aa-dfff-4c5a-9dfc-22fa9ef11817"/>
+			</element>
+			<element kind="textField" uuid="1c0f4faa-6554-471c-84e5-78c49bd774d8" x="230" y="0" width="150" height="30" fontSize="11.0" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{payplan_id}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c916860c-37a1-472a-a90b-4acea96154b4"/>
+			</element>
+			<element kind="textField" uuid="bbd0b5d6-f6f8-4432-9ce7-9e74008373e5" x="380" y="0" width="174" height="30" fontSize="11.0" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{amount}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f759d05a-1332-4ea2-9584-311b4c1eb0e5"/>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="1" splitType="Stretch"/>
+	<pageFooter height="74" splitType="Stretch">
+		<element kind="staticText" uuid="9694707e-2422-4b2b-800b-9095fd957799" x="-8" y="2" width="108" height="19" fontSize="12.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Rate             :]]></text>
+		</element>
+		<element kind="staticText" uuid="bdbfee0d-d87b-4766-bf92-a52b0e52930e" x="-8" y="24" width="108" height="19" fontSize="12.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Rate Price   :]]></text>
+		</element>
+		<element kind="staticText" uuid="90e8f01f-50e7-4924-949d-b76d6be157a9" x="-8" y="46" width="108" height="19" fontSize="12.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Description :]]></text>
+		</element>
+		<element kind="textField" uuid="cf396748-2276-4ca7-9bbe-161b45fed581" x="100" y="2" width="185" height="19" vTextAlign="Middle">
+			<expression><![CDATA[$F{rate}]]></expression>
+		</element>
+		<element kind="textField" uuid="e11b48f9-7e53-4da3-acfe-21cf4bcc40d0" x="100" y="24" width="185" height="19" vTextAlign="Middle">
+			<expression><![CDATA[$F{rate_price}]]></expression>
+		</element>
+		<element kind="textField" uuid="8358709d-3896-4c07-9cc4-9dc2d45ceac3" x="100" y="46" width="185" height="19" vTextAlign="Middle">
+			<expression><![CDATA[$F{description}]]></expression>
+		</element>
+	</pageFooter>
+	<summary splitType="Stretch"/>
+</jasperReport>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainAnchor" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.finalproject.controller.LoginController">
+    <children>
+        <ImageView fx:id="mainImage" fitHeight="600.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <Image url="@../images/pexels-taras-makarenko-188506-593172.jpg" />
+        </ImageView>
+        <ImageView fx:id="titelImage" fitHeight="47.0" fitWidth="58.0" layoutX="647.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../icons/icons8-driver-50.png" />
+            </image>
+        </ImageView>
+        <Text fx:id="mainTitle" layoutX="700.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LEARN DRIVE">
+            <font>
+                <Font name="Calibri Bold" size="30.0" />
+            </font>
+        </Text>
+        <Rectangle fx:id="mainRactangle" arcHeight="5.0" arcWidth="5.0" fill="#d9d9d998" height="501.0" layoutX="27.0" layoutY="70.0" stroke="#d9d9d999" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 50;" width="454.0" />
+        <ImageView fx:id="secondImage" fitHeight="36.0" fitWidth="33.0" layoutX="239.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../icons/icons8-driver-50.png" />
+            </image>
+        </ImageView>
+        <Text fx:id="helloTitle" layoutX="190.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello Again!">
+            <font>
+                <Font name="Cooper Black" size="21.0" />
+            </font>
+        </Text>
+        <Text fx:id="welcometitle" fill="#330a27" layoutX="149.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Back You’ve Been Missed!">
+            <font>
+                <Font name="Cooper Black" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtUserName" layoutX="72.0" layoutY="238.0" prefHeight="33.0" prefWidth="369.0" promptText="Enter Your UserName" style="-fx-background-radius: 40; -fx-background-color: #7E6174;">
+            <font>
+                <Font name="System Bold" size="10.0" />
+            </font>
+        </TextField>
+        <PasswordField fx:id="txtPassword" layoutX="72.0" layoutY="354.0" prefHeight="33.0" prefWidth="369.0" promptText="Enter Your Password" style="-fx-background-color: #7E6174; -fx-background-radius: 40;">
+            <font>
+                <Font name="System Bold" size="10.0" />
+            </font>
+        </PasswordField>
+        <ImageView fx:id="passwordIcon" fitHeight="14.0" fitWidth="14.0" layoutX="85.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../icons/icons8-password-26.png" />
+            </image>
+        </ImageView>
+        <Text fx:id="textPassword" fill="#330a27" layoutX="99.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+            <font>
+                <Font name="Ebrima Bold" size="12.0" />
+            </font>
+        </Text>
+        <Button fx:id="btnLogin" layoutX="179.0" layoutY="442.0" mnemonicParsing="false" onAction="#loginOnAction" prefHeight="55.0" prefWidth="156.0" style="-fx-background-color: #330a27; -fx-background-radius: 20;" text="Log in" textFill="WHITE">
+            <font>
+                <Font name="Dubai Bold" size="27.0" />
+            </font>
+        </Button>
+        <Text fx:id="textAccount" layoutX="164.0" layoutY="563.0" strokeType="OUTSIDE" strokeWidth="0.0" text="don’t have an account?">
+            <font>
+                <Font name="Dubai Bold" size="14.0" />
+            </font>
+        </Text>
+        <Text fx:id="textLarge" fill="WHITE" layoutX="515.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="“WE HELP  STUDENTS  PASS DRIVING  TEST ON THEIR  FIRST TRY...”" wrappingWidth="342.513671875">
+            <font>
+                <Font name="Dubai Bold" size="38.0" />
+            </font>
+        </Text>
+        <Text fx:id="textUnderline" fill="#330a27" layoutX="515.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="learn driving with confidence " underline="true">
+            <font>
+                <Font name="Dubai Bold" size="20.0" />
+            </font>
+        </Text>
+        <Button fx:id="btnSignin" blendMode="DARKEN" layoutX="293.0" layoutY="540.0" mnemonicParsing="false" onAction="#signinOnAction" prefHeight="14.0" prefWidth="63.0" style="-fx-background-color: #fffff; -fx-background-radius: 7;" text="Sign in" textFill="#330a27">
+            <font>
+                <Font name="Dubai Bold" size="14.0" />
+            </font>
+        </Button>
+        <ImageView fx:id="usernameIcon" fitHeight="17.0" fitWidth="18.0" layoutX="82.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../icons/icons8-username-50.png" />
+            </image>
+        </ImageView>
+        <Text fx:id="textUserName" fill="#330a27" layoutX="98.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UserName">
+            <font>
+                <Font name="Ebrima Bold" size="12.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

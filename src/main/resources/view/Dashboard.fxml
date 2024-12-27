@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashAnchor" prefHeight="678.0" prefWidth="1131.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.finalproject.controller.DashboardController">
+   <children>
+      <Group layoutX="32.0" layoutY="102.0" />
+      <Group layoutX="570.0" layoutY="112.0" />
+      <Group layoutX="14.0" layoutY="130.0">
+         <children>
+            <Group />
+         </children>
+      </Group>
+      <Group layoutX="30.0" layoutY="128.0">
+         <children>
+            <Group layoutX="143.0" layoutY="6.0" />
+            <Group layoutX="502.0" />
+            <Group layoutX="248.0" layoutY="-1.0" />
+         </children>
+      </Group>
+      <ImageView fitHeight="506.0" fitWidth="755.0" layoutX="32.0" layoutY="175.0" opacity="0.33" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/road.jpeg" />
+         </image>
+      </ImageView>
+      <Group layoutX="376.0" layoutY="312.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#330a27" height="118.0" layoutX="13.0" layoutY="8.0" stroke="#330a27" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 50;" width="1104.0" />
+      <Label layoutX="37.0" layoutY="39.0" text="Welcom Back Admin!" textFill="WHITE">
+         <font>
+            <Font name="Dubai Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="189.0" layoutX="925.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/employ-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Line endX="977.0" layoutX="145.0" layoutY="137.0" startX="-135.0" stroke="#330a27" strokeWidth="2.0" style="-fx-stroke-dash-array: 3;" />
+      <ImageView fitHeight="263.0" fitWidth="150.0" layoutX="39.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/download.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="263.0" fitWidth="150.0" layoutX="268.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/images%20(3).jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="263.0" fitWidth="150.0" layoutX="39.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/download%20(1).jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="263.0" fitWidth="150.0" layoutX="268.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/images%20(4).jpeg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#330a27" height="221.0" layoutX="39.0" layoutY="148.0" opacity="0.51" stroke="#330a27" strokeType="INSIDE" width="150.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="220.0" layoutX="268.0" layoutY="149.0" opacity="0.51" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7e6174" height="221.0" layoutX="39.0" layoutY="401.0" opacity="0.51" stroke="#7e6174" strokeType="INSIDE" width="150.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#771142" height="221.0" layoutX="268.0" layoutY="400.0" opacity="0.51" stroke="#771142" strokeType="INSIDE" width="150.0" />
+      <Circle fill="#330a27" layoutX="114.0" layoutY="223.0" radius="48.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" />
+      <ImageView fitHeight="69.0" fitWidth="72.0" layoutX="80.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-training-64.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="46.0" layoutY="274.0" text="INSTRUCTOR" textFill="WHITE">
+         <font>
+            <Font name="Dubai Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="80.0" layoutY="299.0" prefHeight="41.0" prefWidth="69.0" text="STAFF" textFill="WHITE">
+         <font>
+            <Font name="Dubai Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="93.0" layoutY="368.0" prefHeight="19.0" prefWidth="42.0" text="05" textFill="#330a27">
+         <font>
+            <Font name="Dubai Bold" size="21.0" />
+         </font>
+      </Label>
+      <Circle layoutX="343.0" layoutY="224.0" radius="48.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" />
+      <ImageView fitHeight="65.0" fitWidth="65.0" layoutX="309.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-driving-50.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="275.0" layoutY="274.0" prefHeight="41.0" prefWidth="137.0" text="STUDENTS" textFill="WHITE">
+         <font>
+            <Font name="Dubai Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="313.0" layoutY="368.0" prefHeight="29.0" prefWidth="60.0" text="03">
+         <font>
+            <Font name="Dubai Bold" size="21.0" />
+         </font>
+      </Label>
+      <Circle fill="#7e6174" layoutX="115.0" layoutY="476.0" radius="48.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" />
+      <ImageView fitHeight="65.0" fitWidth="65.0" layoutX="82.0" layoutY="444.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-car-service-64.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="29.0" layoutY="527.0" prefHeight="41.0" prefWidth="171.0" text="MAINTENANCE" textFill="WHITE">
+         <font>
+            <Font name="Dubai Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="62.0" layoutY="557.0" prefHeight="29.0" prefWidth="60.0" text="STAFF" textFill="WHITE">
+         <font>
+            <Font name="Dubai Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="84.0" layoutY="622.0" prefHeight="29.0" prefWidth="60.0" text="03" textFill="#7e6174">
+         <font>
+            <Font name="Dubai Bold" size="21.0" />
+         </font>
+      </Label>
+      <Circle fill="#771142" layoutX="344.0" layoutY="476.0" radius="48.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" />
+      <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="313.0" layoutY="444.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-vehicle-24.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="294.0" layoutY="533.0" prefHeight="29.0" prefWidth="95.0" text="VEHICLES" textFill="WHITE">
+         <font>
+            <Font name="Dubai Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="312.0" layoutY="622.0" prefHeight="29.0" prefWidth="60.0" text="03" textFill="#771142">
+         <font>
+            <Font name="Dubai Bold" size="21.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="130.0" fitWidth="289.0" layoutX="444.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/istockphoto-1263763421-612x612.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="130.0" fitWidth="355.0" layoutX="776.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ezl_-_everything_you_need_to_know_about_your_first_driving_lessonmain_image-.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="446.0" layoutY="189.0" prefHeight="29.0" prefWidth="95.0" text="Our Courses">
+         <font>
+            <Font name="Dubai Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="776.0" layoutY="189.0" prefHeight="29.0" prefWidth="95.0" text="Our Lessons">
+         <font>
+            <Font name="Dubai Bold" size="16.0" />
+         </font>
+      </Label>
+      <Line endX="9.0" endY="-222.0" layoutX="735.0" layoutY="370.0" startX="9.0" startY="4.0" strokeWidth="3.0" />
+      <Button fx:id="btbInstructor" layoutX="39.0" layoutY="148.0" mnemonicParsing="false" onAction="#instructorOnAction" opacity="0.0" prefHeight="221.0" prefWidth="150.0" />
+      <Button fx:id="btnStudent" layoutX="268.0" layoutY="149.0" mnemonicParsing="false" onAction="#studentOnAction" opacity="0.0" prefHeight="220.0" prefWidth="150.0" />
+      <Button fx:id="btnMaintainer" layoutX="39.0" layoutY="402.0" mnemonicParsing="false" onAction="#maintainerOnAction" opacity="0.0" prefHeight="220.0" prefWidth="150.0" />
+      <Button fx:id="btnVehicles" layoutX="268.0" layoutY="400.0" mnemonicParsing="false" onAction="#vehicleOnAction" opacity="0.0" prefHeight="221.0" prefWidth="150.0" />
+      <TableView fx:id="tblBooking" layoutX="446.0" layoutY="420.0" opacity="0.54" prefHeight="200.0" prefWidth="653.0">
+        <columns>
+          <TableColumn fx:id="bookId" prefWidth="150.0" text="BookingId" />
+          <TableColumn fx:id="bookDate" prefWidth="167.0" text="BookingDate" />
+            <TableColumn fx:id="bookTime" prefWidth="175.0" text="BookingTime" />
+            <TableColumn fx:id="rescheduleReason" prefWidth="160.0" text="Reschedule Reason" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

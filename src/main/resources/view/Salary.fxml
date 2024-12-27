@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="678.0" prefWidth="1131.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.finalproject.controller.SalaryController">
+   <children>
+      <TextField fx:id="txtAmount" layoutX="605.0" layoutY="33.0" prefHeight="32.0" prefWidth="490.0" promptText="Enter Amount" style="-fx-background-color: #9e8496; -fx-background-radius: 40;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPayDay" layoutX="36.0" layoutY="95.0" prefHeight="32.0" prefWidth="490.0" promptText="Enter Date" style="-fx-background-color: #9e8496; -fx-background-radius: 40;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="58.0" layoutY="15.0" text="Salary ID" textFill="#330a27">
+         <font>
+            <Font name="Ebrima Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="629.0" layoutY="15.0" text="Amount" textFill="#330a27">
+         <font>
+            <Font name="Ebrima Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="39.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-id-50%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="610.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-amount-50%20(1).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="58.0" layoutY="76.0" text="Pay Day" textFill="#330a27">
+         <font>
+            <Font name="Ebrima Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="41.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-date-50.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="59.0" layoutY="140.0" text="Is Received" textFill="#330a27">
+         <font>
+            <Font name="Ebrima Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="41.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-date-50.png" />
+         </image>
+      </ImageView>
+      <Group layoutX="32.0" layoutY="102.0" />
+      <Group layoutX="570.0" layoutY="112.0" />
+      <Group layoutX="14.0" layoutY="130.0">
+         <children>
+            <Group />
+         </children>
+      </Group>
+      <Group layoutX="30.0" layoutY="128.0">
+         <children>
+            <Group layoutX="143.0" layoutY="6.0" />
+            <Group layoutX="502.0" />
+            <Group layoutX="248.0" layoutY="-1.0" />
+         </children>
+      </Group>
+      <ImageView fitHeight="517.0" fitWidth="755.0" layoutX="32.0" layoutY="175.0" opacity="0.33" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/road.jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnSave" layoutX="674.0" layoutY="335.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="42.0" prefWidth="117.0" style="-fx-background-color: #000000; -fx-background-radius: 30;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="Dubai Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUpdate" layoutX="826.0" layoutY="335.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="42.0" prefWidth="117.0" style="-fx-background-color: #330a27; -fx-background-radius: 30;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="Dubai Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="979.0" layoutY="335.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="42.0" prefWidth="117.0" style="-fx-background-color: #643554; -fx-background-radius: 30;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="Dubai Bold" size="16.0" />
+         </font>
+      </Button>
+      <Group layoutX="376.0" layoutY="312.0" />
+      <Label layoutX="58.0" layoutY="204.0" text="Staff ID" textFill="#330a27">
+         <font>
+            <Font name="Ebrima Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="40.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-id-50%20(2).png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtReceived" layoutX="36.0" layoutY="159.0" prefHeight="32.0" prefWidth="490.0" promptText="Enter Date" style="-fx-background-color: #9e8496; -fx-background-radius: 40;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtStaffId" layoutX="36.0" layoutY="224.0" prefHeight="32.0" prefWidth="490.0" promptText="Enter ID" style="-fx-background-color: #9e8496; -fx-background-radius: 40;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAdminId" layoutX="606.0" layoutY="159.0" prefHeight="32.0" prefWidth="490.0" promptText="Enter ID" style="-fx-background-color: #9e8496; -fx-background-radius: 40;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="628.0" layoutY="139.0" text="Admin ID" textFill="#330a27">
+         <font>
+            <Font name="Ebrima Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="611.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-id-50%20(2).png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblSalary" layoutX="33.0" layoutY="425.0" onMouseClicked="#onClickTable" prefHeight="109.0" prefWidth="1063.0" style="-fx-background-color: #330a27;">
+        <columns>
+          <TableColumn fx:id="salaryId" prefWidth="124.0" text="Salary ID" />
+          <TableColumn fx:id="amount" prefWidth="127.0" text="Amount" />
+            <TableColumn fx:id="payDay" prefWidth="204.0" text="Pay Day" />
+            <TableColumn fx:id="holidays" prefWidth="132.0" text="Holidays" />
+            <TableColumn fx:id="isReceived" prefWidth="162.0" text="Is Received" />
+            <TableColumn fx:id="adminId" prefWidth="152.0" text="Admin ID" />
+            <TableColumn fx:id="stafId" prefWidth="160.0" text="Staff ID" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtHolidays" layoutX="605.0" layoutY="95.0" prefHeight="32.0" prefWidth="490.0" promptText="Enter Date" style="-fx-background-color: #9e8496; -fx-background-radius: 40;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="630.0" layoutY="75.0" text="Holidays" textFill="#330a27">
+         <font>
+            <Font name="Ebrima Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="612.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-date-50.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9e8496" height="32.0" layoutX="36.0" layoutY="33.0" stroke="#9e8496" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="490.0" />
+      <Button layoutX="34.0" layoutY="335.0" mnemonicParsing="false" onAction="#refreshOnAction" prefHeight="42.0" prefWidth="92.0" style="-fx-background-color: #9e8496; -fx-background-radius: 30;" text="Refresh">
+         <font>
+            <Font name="Dubai Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblSalaryId" layoutX="40.0" layoutY="40.0" text="1">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
